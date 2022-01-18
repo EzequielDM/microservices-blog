@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "cd client && npm install && cd.. && cd Comments && npm install && cd.. && cd event-bus && npm install && cd.. && cd Posts && npm install && cd.. && cd query && npm install && cd..",
     "client": "npm start --prefix client"
   },
   "keywords": [],
