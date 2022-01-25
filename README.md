@@ -6,9 +6,7 @@
 
 - JavaScript
 - JSX
+- Tailwind
 - React.JS
 - Node.JS
 - Express.JS
-
-## How to build 🤔
-Just run `npm run build` and a production version will be supplied 😁
