@@ -123,7 +123,14 @@ const Comments = ({ comments }) => {
             <span className="text-purple-400 font-bold">
               {getRandomUsername()} {getRandomUsername()}
             </span>
-            <p className="font-mono ml-1">{comment.content}</p>
+
+            {comment.status === "rejected" ? (
+              <p className="ml-1 italic text-red-400">This comment was rejected</p>
+            ) : comment.status === "pending" ? (
+              <p className="ml-1 italic text-yellow-500">This post is awaiting approval</p>
+            ) : (
+              <p className="font-mono ml-1">{comment.content}</p>
+            )}
           </li>
         ))}
     </ul>
